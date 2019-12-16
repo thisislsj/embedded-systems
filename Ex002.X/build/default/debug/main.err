@@ -1,0 +1,3 @@
+Message[301] C:\PROGRAM FILES (X86)\MICROCHIP\MPLABX\V5.30\MPASMX\P16F877A.INC 34 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Message[302] D:\UNIVERSITY\SEMESTER6\EMBDDED\PROJECTS\EX002.X\MAIN.ASM 11 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSITY\SEMESTER6\EMBDDED\PROJECTS\EX002.X\MAIN.ASM 37 : Found opcode in column 1. (RETURN)

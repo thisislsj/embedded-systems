@@ -1,0 +1,65 @@
+MPASM 5.86                          MAIN.ASM   11-25-2019  13:45:03         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[105]  : Cannot open file (Include File "PIC16F877A.INC" not found)
+                      00001 #INCLUDE <PIC16F877A.INC>
+                      00002 
+Warning[205]: Found directive in column 1. (__CONFIG)
+Error[113]  : Symbol not previously defined (_FOSC_XT)
+Error[113]  : Symbol not previously defined (_WDTE_OFF)
+Error[113]  : Symbol not previously defined (_PWRTE_OFF)
+Error[113]  : Symbol not previously defined (_BROEN_OFF)
+Error[113]  : Symbol not previously defined (_LVP_OFF)
+Error[113]  : Symbol not previously defined (_CPD_OFF)
+Error[113]  : Symbol not previously defined (_WRT_OFF)
+Error[113]  : Symbol not previously defined (_CP_OFF)
+2007   0000           00003 __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_OFF & _BROEN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
+                      00004     
+                      00005     
+                      00006 RES_VECT CODE 0x0000
+0000   2???           00007     GOTO    START
+                      00008     
+                      00009 MAIN_PROG CODE
+                      00010  
+0000                  00011 START
+Warning[207]: Found label after column 1. (BSP)
+Error[122]  : Illegal opcode (STATUS)
+0000                  00012     BSP STATUS, RPO
+Error[113]  : Symbol not previously defined (TRISB)
+0000   0180           00013     CLRF TRISB
+Error[113]  : Symbol not previously defined (TRISD)
+0001   0180           00014     CLRF TRISD
+Error[113]  : Symbol not previously defined (STATUS)
+Error[113]  : Symbol not previously defined (RPO)
+0002   1000           00015     BCF STATUS, RPO
+Error[113]  : Symbol not previously defined (PORTB)
+0003   0180           00016     CLRF PORTB
+Error[113]  : Symbol not previously defined (PORTD)
+0004   0180           00017     CLRF PORTD
+Error[113]  : Symbol not previously defined (PORTB)
+0005   1480           00018     BSF PORTB, 1
+                      00019     
+                      00020     
+0006                  00021 MAIN
+Error[113]  : Symbol not previously defined (PORTD)
+0006   1400           00022     BSF PORTD, 0
+0007   2???           00023     GOTO MAIN
+0000                  00024     END
+MPASM 5.86                          MAIN.ASM   11-25-2019  13:45:03         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+MAIN                              00000006
+START                             00000000
+__16LF877A                        00000001
+
+Errors   :    18
+Warnings :     2 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
