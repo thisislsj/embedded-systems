@@ -20,8 +20,7 @@ void init_timer0_overflow_interrupt(void){
 	TCCR0A &= 0xFC;
 	TCCR0B &= 0xF7;
 	TCCR0B |= 0x04;
-	TCCR0B |= 0xFC;
-	
+	TCCR0B |= 0xFC;	
 }
 	
 
